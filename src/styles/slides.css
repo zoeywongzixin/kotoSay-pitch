@@ -361,6 +361,7 @@
 .unit__seg--margin { background: var(--sign); color: #fffcf6; }
 .unit__labels { display: flex; gap: 2px; margin-top: 0.9cqw; }
 .unit__labels > span { flex: var(--w) 1 0; padding-right: 1cqw; font-size: 1.15cqw; line-height: 1.35; color: var(--ink-2); }
+.biz__sources { margin-top: 2.2cqw; }
 .reasons { display: flex; flex-direction: column; gap: 1.2cqw; }
 .reason {
   display: flex; gap: 1.4cqw;
@@ -376,7 +377,8 @@
 /* ---------- 11 · Growth ---------- */
 .phases {
   position: relative; flex: none;
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5cqw;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 3.5cqw;
+  max-width: 82cqw;
 }
 .phases::before {                     /* the timeline */
   content: "";
@@ -399,8 +401,32 @@
 .phase__date { position: relative; z-index: 1; padding: 0 1cqw 0 0.9cqw; background: var(--bg); }
 .phase__card { flex: 1; background: none; border: 0; border-radius: 0; border-top: 1px solid var(--hairline-strong); padding: 1.7cqw 0; }
 .phase__milestone { font-size: 4cqw; line-height: 1; letter-spacing: -0.035em; color: var(--sign-ink); font-weight: 700; margin-bottom: 1.5cqw; }
-.phase__support { font-size: 1.35cqw; color: var(--ink-3); margin-top: 1.2cqw; }
 .phase .headline { margin-bottom: 0.5cqw; color: var(--ink-1); }
+.phase__list {
+  margin-top: 0.8cqw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75cqw;
+}
+.phase__list li {
+  position: relative;
+  padding-left: 1.3cqw;
+  font-size: 1.4cqw;
+  line-height: 1.42;
+  color: var(--ink-1);
+  text-wrap: pretty;
+}
+.phase__list li::before {
+  content: "";
+  position: absolute;
+  left: 0.15cqw;
+  top: 0.55em;
+  width: 0.38cqw;
+  height: 0.38cqw;
+  border-radius: 50%;
+  background: var(--ink-1);
+}
+.phase__support { font-size: 1.4cqw; color: var(--ink-1); margin-top: 1.2cqw; }
 /* ---------- 12 · Team ---------- */
 .team {
   flex: 1; min-height: 0; margin-top: 0.5cqw;
