@@ -1074,6 +1074,11 @@ body.is-idle { cursor: none; }
 
 /* Bigger rubric labels */
 .eyebrow { font-size: 1.75cqw; font-weight: 700; margin-bottom: 0.8cqw; }
+
+.impact-concern { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4cqw 1cqw; font-size: 1.6cqw; line-height: 1.35; color: var(--ink-2); padding: 1.2cqw 1.6cqw; background: var(--surface-1); border: 1px solid var(--hairline); border-radius: var(--r-lg); }
+.impact-concern__tag { font-size: 1.1cqw; font-weight: 700; letter-spacing: 0.02em; text-transform: uppercase; color: var(--stamp); }
+.impact-concern strong { color: var(--ink-1); }
+.impact-concern .voice-text { font-weight: 700; }
 </style>
 
 <main class="stage" id="stage" aria-roledescription="carousel" aria-label="kotoSay pitch deck">
@@ -1341,20 +1346,20 @@ body.is-idle { cursor: none; }
     <div class="places">
       <article class="place place--brush" data-reveal style="--i:2">
         <span class="brush" lang="ja" aria-hidden="true">学ぶ</span>
-        <div><h3 class="headline">Education</h3><p class="body">Ask questions in class in your own sign language.</p></div>
+        <div><h3 class="headline">Education</h3><p class="body">Sign a question in class. kotoSay voices it to the teacher.</p></div>
       </article>
       <article class="place place--brush" data-reveal style="--i:3">
         <span class="brush" lang="ja" aria-hidden="true">銀行</span>
-        <div><h3 class="headline">Banking</h3><p class="body">Open an account and manage money on your own.</p></div>
+        <div><h3 class="headline">Banking</h3><p class="body">Sign at the counter. The teller hears you and replies in sign.</p></div>
       </article>
       <article class="place place--brush" data-reveal style="--i:4">
         <span class="brush" lang="ja" aria-hidden="true">面接</span>
-        <div><h3 class="headline">Job interviews</h3><p class="body">Interview without waiting for a booked interpreter.</p></div>
+        <div><h3 class="headline">Job interviews</h3><p class="body">Interview on the spot, with no interpreter booked days ahead.</p></div>
       </article>
     </div>
   </div>
   <div class="impact-foot" data-reveal style="--i:5">
-    <p class="lede">Designed to address concerns raised by the World Federation of the Deaf (<strong>WFD</strong>) and World Association of Sign Language Interpreters (<strong>WASLI</strong>).</p>
+    <p class="impact-concern"><span class="impact-concern__tag">WFD &amp; WASLI’s concern</span> Sign AI that goes <strong>word by word</strong>, <strong>ignores the face</strong> and works <strong>one way only</strong>. <span class="voice-text">kotoSay is built against all three.</span></p>
   </div>
 </section>
 

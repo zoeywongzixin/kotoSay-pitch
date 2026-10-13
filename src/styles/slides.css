@@ -722,3 +722,8 @@
 
 /* Bigger rubric labels */
 .eyebrow { font-size: 1.75cqw; font-weight: 700; margin-bottom: 0.8cqw; }
+
+.impact-concern { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4cqw 1cqw; font-size: 1.6cqw; line-height: 1.35; color: var(--ink-2); padding: 1.2cqw 1.6cqw; background: var(--surface-1); border: 1px solid var(--hairline); border-radius: var(--r-lg); }
+.impact-concern__tag { font-size: 1.1cqw; font-weight: 700; letter-spacing: 0.02em; text-transform: uppercase; color: var(--stamp); }
+.impact-concern strong { color: var(--ink-1); }
+.impact-concern .voice-text { font-weight: 700; }
