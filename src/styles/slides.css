@@ -731,25 +731,8 @@
 /* ==========================================================================
    Proof edition: bigger reading sizes, new components
    ========================================================================== */
-.body { font-size: 1.7cqw; }
-.lede { font-size: 1.85cqw; }
-.caption { font-size: 1.1cqw; }
-.title { font-size: 3.4cqw; }
-.title--keywords { color: var(--ink-statement); }
-.story__text { font-size: 1.9cqw; }
-.node p { font-size: 1.75cqw; }
-.node__kicker { font-size: 1.25cqw; }
-.vstep .body { font-size: 1.6cqw; }
-.reason .body { font-size: 1.5cqw; }
-.reason .headline { font-size: 2cqw; }
-.member .body { font-size: 1.45cqw; }
-.member__role { font-size: 1.35cqw; }
-.stat .body { font-size: 1.55cqw; }
-.award .body { font-size: 1.5cqw; }
-.why .body { font-size: 1.6cqw; }
-.market-assumptions span { font-size: 1.55cqw; }
-.phase .body { font-size: 1.6cqw; }
-.phase__support { font-size: 1.45cqw; }
+.caption { font-size: 1.05cqw; }
+.title--keywords { color: var(--ink-1); }
 
 /* 03 · the lawsuit line */
 .ong__facts li.ong__fact--now { font-size: 1.8cqw; font-weight: 500; color: var(--ink-2); padding-top: 0.6cqw; border-top: 1px solid var(--hairline-strong); }
@@ -817,3 +800,26 @@
 .val .vstep .body { font-size: 1.45cqw; }
 .val .vphotos--stack { max-height: 26cqw; }
 .val + .callout { margin-top: 1.2cqw; padding: 1.2cqw 2cqw; }
+
+/* ==========================================================================
+   Cleanup: fewer boxes, more air
+   ========================================================================== */
+/* 01 · proof as a plain timeline, not pills */
+.opener__proof { margin-top: 2.4cqw; gap: 0; flex-wrap: nowrap; }
+.opener__proof li { padding: 0 1.6cqw; background: none; border: 0; border-radius: 0; font-size: 1.35cqw; color: var(--ink-2); }
+.opener__proof li + li { border-left: 1px solid var(--hairline-strong); }
+
+/* 07 · impact without cards */
+.impact__line { margin-top: 0.4cqw; font-size: 1.5cqw; color: var(--ink-2); }
+.impact__line b { color: var(--stamp); font-size: 1.15em; }
+.impact__line .impact__src { display: inline; font-size: 1cqw; color: var(--ink-3); }
+.flipcols { margin-top: 2.6cqw; gap: 3cqw; align-items: start; }
+.flip { padding-top: 1.4cqw; border-top: 1px solid var(--hairline-strong); }
+.flip__head { margin-bottom: 1.2cqw; }
+.flip__head .brush { font-size: 4cqw; }
+.flip__today, .flip__now { padding: 0; background: none; border: 0; box-shadow: none; border-radius: 0; }
+.flip__now { background-image: none; }
+.flip__today p { font-size: 1.5cqw; }
+.flip__now p { font-size: 1.75cqw; }
+.flip__arrow { height: 3.4cqw; justify-content: flex-start; padding-left: 0.2cqw; }
+.flip__via { left: 2.4cqw; }
