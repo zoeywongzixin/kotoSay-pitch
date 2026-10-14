@@ -902,3 +902,12 @@
 .head-sticker { position: absolute; right: 5cqw; top: 2cqw; width: 15cqw; height: 11cqw; object-fit: contain; }
 .head-sticker--growth { width: 19cqw; height: 9cqw; top: 3cqw; }
 .head-sticker--market { width: 13cqw; height: 13cqw; top: 1.6cqw; }
+
+/* layout fixes: business model columns share top and bottom edges, body centred in the space below the title */
+.biz { align-items: stretch; align-content: center; }
+.biz .price { display: flex; flex-direction: column; }
+.biz .biz__sources { margin-top: auto; padding-top: 1.5cqw; }
+/* impact: the change box spans the same width as the columns above */
+.impact-foot { max-width: none; }
+/* competition: legend on one line, sources on the next */
+.matrix__src { display: block; margin-top: 0.4cqw; }
