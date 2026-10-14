@@ -1254,6 +1254,15 @@ body.is-idle { cursor: none; }
 .head-sticker { position: absolute; right: 5cqw; top: 2cqw; width: 15cqw; height: 11cqw; object-fit: contain; }
 .head-sticker--growth { width: 19cqw; height: 9cqw; top: 3cqw; }
 .head-sticker--market { width: 13cqw; height: 13cqw; top: 1.6cqw; }
+
+/* layout fixes: business model columns share top and bottom edges, body centred in the space below the title */
+.biz { align-items: stretch; align-content: center; }
+.biz .price { display: flex; flex-direction: column; }
+.biz .biz__sources { margin-top: auto; padding-top: 1.5cqw; }
+/* impact: the change box spans the same width as the columns above */
+.impact-foot { max-width: none; }
+/* competition: legend on one line, sources on the next */
+.matrix__src { display: block; margin-top: 0.4cqw; }
 </style>
 
 <main class="stage" id="stage" aria-roledescription="carousel" aria-label="kotoSay pitch deck">
@@ -1667,7 +1676,7 @@ body.is-idle { cursor: none; }
     <span class="mark mark--yes mark--sm" aria-hidden="true"></span> Meets the need
     <span class="mark mark--part mark--sm" aria-hidden="true"></span> Partly
     <span class="mark mark--no mark--sm" aria-hidden="true"></span> Misses it
-    &nbsp;·&nbsp; Sources: Google DeepMind, SL2T launch (Aug 2026) · SoftBank, SureTalk (Sep 2026) · Suginami City interpreter dispatch
+    <span class="matrix__src">Sources: Google DeepMind, SL2T launch (Aug 2026) · SoftBank, SureTalk (Sep 2026) · Suginami City interpreter dispatch</span>
   </p>
 </section>
 
