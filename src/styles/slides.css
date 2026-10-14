@@ -911,3 +911,7 @@
 .impact-foot { max-width: none; }
 /* competition: legend on one line, sources on the next */
 .matrix__src { display: block; margin-top: 0.4cqw; }
+
+/* 09 · market: globe anchored beside the ¥90B number */
+.market-summary--globe { display: flex; align-items: center; gap: 2.4cqw; }
+.market-globe { flex: none; width: 15cqw; height: 15cqw; object-fit: contain; filter: drop-shadow(0 1.2cqw 1.6cqw rgba(60, 45, 20, 0.16)); }
