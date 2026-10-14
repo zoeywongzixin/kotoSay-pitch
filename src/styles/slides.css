@@ -475,10 +475,11 @@
 .market-total span { font-size: 0.45em; }
 .market-summary .lede { margin-top: 1cqw; }
 .market-assumptions { border-left: 1px solid var(--hairline-strong); padding-left: 3cqw; }
-.market-assumptions li { display: flex; flex-direction: column; gap: 0.3cqw; margin-bottom: 1.8cqw; }
+.market-assumptions li { display: flex; flex-direction: column; gap: 0.2cqw; margin-bottom: 1.3cqw; }
+.market-assumptions li:last-child { margin-bottom: 0; }
 .market-assumptions strong { font-size: 2.4cqw; }
 .market-assumptions span { font-size: 1.4cqw; color: var(--ink-2); }
-.market-note { margin-top: 2cqw; max-width: 83cqw; }
+.market-note { margin-top: 1.2cqw; max-width: 83cqw; }
 .needs { flex: none; margin-top: 1.5cqw; }
 .needs__intro { margin-bottom: 1cqw; }
 .needs__list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5cqw; }
